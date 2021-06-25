@@ -1,0 +1,57 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+
+}
+
+.header a {
+  float: left;
+  color: purple;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px; 
+  line-height: 25px;
+  border-radius: 50px;
+}
+
+.header a.logo {
+  font-size: 50px;
+  font-weight: bold;
+    color: purple;
+
+}
+
+.header a:hover {
+  background-color:purple;
+  color: ghostwhite;
+}
+
+.header a.active {
+  background-color: purple;
+  color:ghostwhite;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}

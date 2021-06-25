@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Allpage.css">
+    <link rel="stylesheet" href="imageslider.css">
+<style>
+a {
+  text-decoration: none; 
+  display: inline-block;
+  padding: 8px 16px;
+    
+}
+
+
+.previous {
+  background-color: purple;
+  color: lavender;
+    }
+    
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+col1{
+    flex-basis: 25%;
+    padding:10px;
+    margin-bottom:50px;
+    
+ 
+}
+.col1 img{
+    width: 400px;
+    box-shadow: 0px 0px 5px 2px;
+}
+
+h4{
+    color:black;
+    font-weight:normal;
+}
+.col1.p{
+    font-size:14px;
+}
+
+    .btn{
+        color: lavender;
+        background: purple;
+    }
+.btn,.a:hover {
+  background-color: lavender;
+  color: purple;
+    border-radius: 50px;
+    }
+
+
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+    
+    
+     table{
+     font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+  
+    
+    </style>
+    </head>
+    <body>
+<div class="header">
+    
+    <a href="Purplebubblehome.html" class="logo">PURPLEBUBBLE</a>
+     <div class="header-right">
+    <a  href="Purplebubblehome.html">Home</a>
+    <a href="purplebubbleaboutbts.html">BTS</a>
+    <a class="active" href="purplebubblemerch.html">Merchandise</a>
+    <a href="PBsignuppage.html">Sign-up</a>
+       <a href="pblogin.html">Login</a>
+    <a href="pupplebubblecontact.html">Contact</a>
+  </div>
+    </div>
+    <div style="padding-left:20px; padding-top: 20px;">
+<a href="purplebubblemerch.html" class="previous">&laquo; Back</a>
+    </div>
+   
+    
+       <div class="small-container">
+        <div class="row">
+        <div class="col1">
+            <div class="mySlides">
+            <img src="B1-min.jpeg">
+                </div>
+         <div class="mySlides">
+    <img src="A1-min.jpeg" >
+  </div>
+            </div>
+            
+            
+            <div class="col1">
+            <h1>
+                WHITE CARDIGAN
+                </h1>
+                <h2>
+                    Rs999/-
+                </h2>
+                <p>Select Color:<select>
+                    <option>Black</option>
+                    <option>White</option>
+                    </select>
+                </p>
+               <p> Select Quantity:<input type="number" value="1"></p>
+                <a href="" class="btn">BUY</a>
+                <h2>
+                    Product details
+                </h2>
+                <p>Cardigan with "Black Swan" motif embroidered just below the shoulders.<br>Its oversized for an extra comfy,relaxed fit.<br>The sleeve is embroidered with a small Bts symbol. </p>
+                
+                  <h4><b>SIZE CHARt</b></h4>
+             
+      <table border="1" bgcolor="lavender" style="font-family: Candara,Serif;color:black;">
+ <tr>
+    <th>Size</th>
+    <th>Lenght</th>
+    <th>Shoulders</th>
+    <th>Chest</th> 
+      <th>Sleeve</th>
+  </tr>
+    <tr>
+    <td>Medium</td>
+    <td>79.0cm</td>
+    <td>71.0cm</td>
+    <td>66.0cm</td>
+    <td>51.0cm</td>
+  </tr>       
+     <tr>
+    <td>Large</td>
+    <td>80.0cm</td>
+    <td>73.0cm</td>
+    <td>68.0cm</td>
+    <td>52.0cm</td>
+  </tr>            
+              
+      </table>
+            </div>
+           </div>
+           
+             <div class="row2">
+                 <div class="column">
+              <div class="demo cursor">
+ <img class="demo cursor" src="B1-min.jpeg" style="width:100%" onclick="currentSlide(1)">
+                  </div>
+              </div>
+              <div class="column">
+              <div class="demo cursor">
+ <img class="demo cursor" src="A1-min.jpeg" style="width:100%" onclick="currentSlide(2)">
+                  </div>
+              </div>
+            </div>
+        </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  
+}
+</script>
+    </body>
+</html>
+
+
