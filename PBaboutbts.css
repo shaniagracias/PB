@@ -1,0 +1,106 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('C:/Users/ASUS/Pictures/BTS/Awesome New BTS Logo Wallpapers - WallpaperAccess edited.jpg');
+        background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:100% 100%;
+}
+a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+p{
+    padding: 40px;
+} 
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ table, td, th {  
+  border: 3px solid  white;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 3px;
+  font-size: 13px;
+}    
+
+.textOverImage{
+    width:450px;
+    height:450px;
+    display:inline-block;
+    background-size:cover;
+    border-radius:4px;
+    margin:4px;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+  }
+  
+  .textOverImage > input{
+    display:none;
+  }
+  
+  .textOverImage > div,.textOverImage > h2{
+    position:absolute;
+    background-color:ghostwhite;
+    bottom:20px;
+    left:4px;
+    right:4px;
+    border-radius:4px;
+    padding:8px;
+    overflow:hidden;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div{
+    bottom:4px;
+    opacity:1;
+  }
+  
+  .textOverImage > input:checked + h2{
+    bottom:-20px;
+    opacity:0;
+  }
+  
+  .textOverImage > h2{
+    margin:0;
+  }    
+  .footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}  
+
+.footer a{
+    text-decoration: none;
+    color:aliceblue;
+    
+}

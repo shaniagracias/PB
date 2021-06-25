@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="Allpage.css">
+
+  <link rel="stylesheet" href="signup.css">  
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+    alert("Submitted");
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="header">
+    
+    <a href="Purplebubblehome.html" class="logo">PURPLEBUBBLE</a>
+  <div class="header-right">
+    <a href="Purplebubblehome.html">Home</a>
+      <a href="purplebubbleaboutbts.html">BTS</a>
+    <a href="purplebubblemerch.html">Merchandise</a>
+      <a class="active" href="PBsignuppage.html">Sign-up</a>
+      <a href="pblogin.html">Login</a>
+    <a href="pupplebubblecontact.html">Contact</a>
+  </div>
+</div>
+   <div class="container">  
+ <div style="text-align:center">
+    <h2>SIGN-UP<hr style="height:2px;width:50%;color:gray;background-color:gray"/></h2>
+    <p></p>
+  </div>
+ 
+
+      <div class="row">
+    <div class="column">
+      <img src="BTSMOTS7-min.jpg" style="width:100%">
+    </div>
+ <div class="column">
+      <form action="pbsignup.jsp" method="get">
+        <p>Please fill in this form to create an account.</p>
+      <hr>
+        <label for="fname"><b>First Name</b></label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+          <label for="lname"><b>Last Name</b></label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."  required>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+       <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+      
+          
+     </form>
+        </div>
+    </div>
+    </div>
+      
+    </body>
+</html>
+
+
+
+
+
+

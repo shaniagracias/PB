@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="Allpage.css">
+<link rel="stylesheet" href="contact.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){
+    alert("Submitted");
+  });
+});
+</script>
+</head>
+<body>
+
+<div class="header">
+    
+    <a href="Purplebubblehome.html" class="logo">PURPLEBUBBLE</a>
+  <div class="header-right">
+    <a href="Purplebubblehome.html">Home</a>
+      <a href="purplebubbleaboutbts.html">BTS</a>
+    <a href="purplebubblemerch.html">Merchandise</a>
+    <a href="PBsignuppage.html">Sign-up</a>
+       <a href="pblogin.html">Login</a>
+    <a class="active" href="pupplebubblecontact.html">Contact</a>
+  </div>
+</div>
+
+    
+  <div class="container">
+  <div style="text-align:center">
+    <h2>CONTACT US<hr style="height:2px;width:50%;color:gray;background-color:gray"/></h2>
+    <p></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="BTSMOTS7-min.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="form" method="get">
+        <label for="fname"><b>First Name</b></label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+          <label for="lname"><b>Last Name</b></label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."  required>
+        <label for="email"><b>E-mail</b></label>
+      <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+        <label for="subject"><b>Message</b></label>
+        <textarea id="subject" name="subject" placeholder="Write message.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+        <hr>
+           <center> <h3>If you still have any doubts ,email us at</h3>
+            <a id="emailid" href="mailto:shaniagracias2001@gmail.com">PB@gmail.com</a></center>
+        </div>
+    </div>
+  </div>
+    
+
+</body>
+</html>
+
+
