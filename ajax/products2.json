@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Ball Cap",
+        "price": "499",
+        "img": "ballcapbts (1).jpg",
+        "url": "cap.html",
+        "rating": 3.5
+    },
+    {
+        "name": "BTS Poster Set",
+        "price": "499",
+        "img": "poster (2).jpeg",
+        "url": "poster.html",
+        "rating": 3
+    },
+    {
+        "name": "BTS Card Set",
+        "price": "399",
+        "img": "postcardset (1).jpeg",
+        "url": "cardset.html",
+        "rating": 4.5
+    }
+]

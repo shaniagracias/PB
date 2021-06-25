@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Memo Notes",
+        "price": "499",
+        "img": "2-min.jpg",
+        "url": "memonotes.html",
+        "rating": 5
+    },
+    {
+        "name": "White Cardigan",
+        "price": "499",
+        "img": "A.jpg",
+        "url": "blackswanwhitecardigan.html",
+        "rating": 4
+    },
+    {
+        "name": "Tote Bag",
+        "price": "399",
+        "img": "tinytanslingbag.jpg",
+        "url": "slingbag.html",
+        "rating": 2.5
+    }
+]
